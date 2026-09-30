@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Yan-Zero/dsh-std/3df054302468d2091859db4b3bd079042d33f100/packages/manifest/schema/dsh-plugin-0.15.schema.json",
+  "manifestVersion": "0.15",
+  "id": "dev.ymh0000123.theme-endfield",
+  "name": "dsh-theme-endfield",
+  "version": "1.1.5",
+  "facets": {
+    "host": {
+      "entry": "index.js",
+      "apiVersion": "v1alpha1"
+    }
+  },
+  "license": "MIT",
+  "source": {
+    "repository": "https://github.com/ymh0000123/dsh-theme-endfield",
+    "revision": "a9f79fd197b7c2530a59ab0c4133169db5318784"
+  },
+  "x-mojobox-maintenance": {
+    "source": "registry-maintained",
+    "reason": "Catalog projection maintained by DSH-EAC from upstream package metadata. Host entry is the Cordis package entry; v1alpha1 follows the Mojobox catalog convention and does not assert dsh-std negotiation. Fixed Git sources and published npm bytes are independently recorded; their equivalence is not asserted."
+  },
+  "x-mojobox-publication": {
+    "status": "unpublished",
+    "reason": "Fixed GitHub package source is available; no verified artifact for this exact package/version was found.",
+    "artifactVerification": "not-available",
+    "npmPublished": false
+  },
+  "x-mojobox-source-metadata": {
+    "skinId": "endfield",
+    "displayName": "终末地官网风格",
+    "author": "ymh0000123",
+    "description": "终末地官网风格：工业界面、黄/青配色、等高线与水印。",
+    "tags": [
+      "endfield",
+      "industrial",
+      "editorial",
+      "contour",
+      "yellow",
+      "cyan"
+    ],
+    "references": {
+      "implementation": [
+        "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/package.json",
+        "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/cordis.patch.yml",
+        "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/client.js",
+        "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/index.js",
+        "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/docs/design-language.md",
+        "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/README.md"
+      ],
+      "previews": {
+        "overview": "https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/a9f79fd197b7c2530a59ab0c4133169db5318784/assets/screenshots1.webp"
+      },
+      "license": {
+        "spdx": "MIT",
+        "path": "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/LICENSE"
+      }
+    },
+    "installation": {
+      "type": "github",
+      "pluginRefs": [
+        {
+          "ref": "github:ymh0000123/dsh-theme-endfield",
+          "version": "1.1.5"
+        }
+      ],
+      "status": "unverified",
+      "notes": [
+        "固定提交根目录具备 package.json、index.js、client.js 及 cordis.patch.yml；包名 dsh-theme-endfield，版本 1.1.5。",
+        "上游同时提供视觉主题、持久设置及音频通知；本记录仅描述上游插件，不声明已适配官方皮肤注入器。",
+        "GitHub 引用的 version 是期望版本，不保证安装器获取固定源码提交；固定 revision 单独用于来源追溯。",
+        "原创代码采用 MIT；Endfield 名称、标识、截图及相关素材权利归 Hypergryph，素材边界见上游 README。",
+        "尚未在当前目标宿主安装验证，不由元数据推定兼容。"
+      ]
+    },
+    "sourceMetadataDigest": "sha256:d5c5852efbe97ebb5b2b2102c1b3ec2c02ad540f7f086443e44ff6e8e93a0e03",
+    "packageSnapshotDigest": "sha256:623aec620c72faf41e90266a6d68d8cf2c9d15df9785ca61e57989d9d418195a",
+    "loaderIntegration": "not-verified",
+    "runtimeVerification": "not-tested"
+  }
+}

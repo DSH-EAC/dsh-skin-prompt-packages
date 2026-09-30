@@ -8,6 +8,7 @@ EAC 与 AIO 自定义客户端皮肤的 AI Prompt 包与社区来源元数据集
 - `skin-prompts/inventory.json`：原有十套 EAC/AIO 皮肤来源。
 - `skin-prompts/packages/`：每套皮肤的 `manifest.json`、`prompt.md` 和说明。
 - [`skin-prompts/community-metadata.json`](skin-prompts/community-metadata.json)：新增五组社区皮肤的独立元数据。
+- [`mojobox/`](mojobox/README.md)：保留原始元数据并生成 Mojobox 目录记录、来源映射与校验报告。
 - `DESIGN.md`：Prompt 包结构与字段设计。
 - `skin-prompt-pack.test.ts`：原有 Prompt 包契约测试。
 
@@ -35,6 +36,9 @@ EAC 与 AIO 自定义客户端皮肤的 AI Prompt 包与社区来源元数据集
 
 ```powershell
 node --test skin-prompt-pack.test.ts
+npm --prefix mojobox ci --ignore-scripts
+npm --prefix mojobox run build
+npm --prefix mojobox test
 ```
 
 Prompt 包与来源元数据不是可直接安装的 DSH 插件，不改变现有 Cordis 皮肤的

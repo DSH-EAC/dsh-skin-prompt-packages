@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Yan-Zero/dsh-std/3df054302468d2091859db4b3bd079042d33f100/packages/manifest/schema/dsh-plugin-0.15.schema.json",
+  "manifestVersion": "0.15",
+  "id": "dev.ggbond2424648901.deep-whale-day-night",
+  "name": "@dsh-external/dsh-client-ui-skin-deep-whale-day-night",
+  "version": "0.1.12",
+  "facets": {
+    "host": {
+      "entry": "lib/index.js",
+      "apiVersion": "v1alpha1"
+    }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "source": {
+    "repository": "https://github.com/GGBond2424648901/deep-whale-day-night-theme",
+    "revision": "3f6c4f14716d1e500f585be0c0d3c139c7a8a90b"
+  },
+  "artifact": {
+    "path": "https://github.com/GGBond2424648901/deep-whale-day-night-theme/releases/download/v0.1.12/deep-whale-day-night-theme-0.1.12.tgz",
+    "digest": "sha256:31363ec7901f1f2657d930107982227ae4e137a944c036d70b7df380a01ce922",
+    "algorithm": "sha256"
+  },
+  "x-mojobox-maintenance": {
+    "source": "registry-maintained",
+    "reason": "Catalog projection maintained by DSH-EAC from upstream package metadata. Host entry is the Cordis package entry; v1alpha1 follows the Mojobox catalog convention and does not assert dsh-std negotiation. Fixed Git sources and published npm bytes are independently recorded; their equivalence is not asserted."
+  },
+  "x-mojobox-publication": {
+    "status": "published",
+    "reason": "GitHub Release asset and SHA-256 confirmed by the GitHub API. Full local download verification is pending; source package metadata is not projected as artifact metadata.",
+    "artifactVerification": "publisher-digest",
+    "npmPublished": false
+  },
+  "x-mojobox-source-metadata": {
+    "skinId": "deep-whale-day-night",
+    "displayName": "鲸鱼娘昼夜工坊",
+    "author": "Small-tailqwq · GGBond2424648901",
+    "description": "鲸鱼娘昼夜工坊：水晶白昼、月潮暗夜及场景角色。",
+    "tags": [
+      "whale",
+      "maid",
+      "day-night",
+      "glass",
+      "animated",
+      "community"
+    ],
+    "references": {
+      "implementation": [
+        "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/README.md",
+        "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/package.json",
+        "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/skin.json",
+        "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/cordis.patch.yml",
+        "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/src/client/index.ts",
+        "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/NOTICE"
+      ],
+      "previews": {
+        "light": "https://raw.githubusercontent.com/GGBond2424648901/deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/preview/light.webp",
+        "dark": "https://raw.githubusercontent.com/GGBond2424648901/deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/preview/dark.webp"
+      },
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "path": "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/LICENSE"
+      }
+    },
+    "installation": {
+      "type": "github",
+      "pluginRefs": [
+        {
+          "ref": "github:GGBond2424648901/deep-whale-day-night-theme",
+          "version": "0.1.12"
+        }
+      ],
+      "status": "unverified",
+      "notes": [
+        "已核实根 package.json、bundle patch、skin.json 和预构建客户端，包名为 @dsh-external/dsh-client-ui-skin-deep-whale-day-night；未在目标宿主安装或进行运行时验证。",
+        "version 0.1.12 是固定源码清单版本，不代表薄包宿主能够用该字段锁定 Git commit；固定源码 SHA 单独记录在 sources。",
+        "上游仅验证 DSH 0.1.0-rc.7，theme peer 为 >=0.1.0-rc.5 <0.2.0；新版 DSH 兼容性未知。",
+        "独立源的原始 skin id 为 maid-atelier，bodyAttr 为 data-dsh-maid-atelier，与 Small-tailqwq/dsh-deep-whale 的女仆工坊及既有 maid-atelier 可能冲突，不能同时激活。",
+        "原始包直接依赖 theme 服务，不需要鲸鱼娘 manager；若联合使用 manager，重复 skin id 会影响发现及互斥，必须先解决冲突。",
+        "这是独立昼夜主题来源，不等同于本仓既有 EAC/AIO maid-atelier；代码及美术均按上游 CC BY-NC-SA 4.0 使用，须保留完整 NOTICE 署名链。"
+      ]
+    },
+    "sourceMetadataDigest": "sha256:d5c5852efbe97ebb5b2b2102c1b3ec2c02ad540f7f086443e44ff6e8e93a0e03",
+    "packageSnapshotDigest": "sha256:49aa419a9318329042b0310da3cfb37ae712af07de0196121e687f54161a3744",
+    "loaderIntegration": "not-verified",
+    "runtimeVerification": "not-tested"
+  }
+}

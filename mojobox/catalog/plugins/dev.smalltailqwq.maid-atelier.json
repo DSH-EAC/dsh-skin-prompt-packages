@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Yan-Zero/dsh-std/3df054302468d2091859db4b3bd079042d33f100/packages/manifest/schema/dsh-plugin-0.15.schema.json",
+  "manifestVersion": "0.15",
+  "id": "dev.smalltailqwq.maid-atelier",
+  "name": "@smalltailqwq/dsh-client-ui-skin-maid-atelier",
+  "version": "0.1.7",
+  "facets": {
+    "host": {
+      "entry": "lib/index.js",
+      "apiVersion": "v1alpha1"
+    }
+  },
+  "license": "MIT AND CC-BY-NC-SA-4.0",
+  "source": {
+    "repository": "https://github.com/Small-tailqwq/dsh-deep-whale",
+    "revision": "42ecc2a587c4276e6b65a01933505a42d7f31584"
+  },
+  "artifact": {
+    "path": "https://registry.npmjs.org/@smalltailqwq/dsh-client-ui-skin-maid-atelier/-/dsh-client-ui-skin-maid-atelier-0.1.7.tgz",
+    "digest": "sha256:87365c3bf8102ad10d01451064ab9af22a5a93e08c69e1751c6bee6a31fbb770",
+    "algorithm": "sha256"
+  },
+  "x-mojobox-maintenance": {
+    "source": "registry-maintained",
+    "reason": "Catalog projection maintained by DSH-EAC from upstream package metadata. Host entry is the Cordis package entry; v1alpha1 follows the Mojobox catalog convention and does not assert dsh-std negotiation. Fixed Git sources and published npm bytes are independently recorded; their equivalence is not asserted."
+  },
+  "x-mojobox-publication": {
+    "status": "published",
+    "reason": "Exact npm tarball downloaded with lifecycle scripts disabled; SHA-256 measured from its bytes.",
+    "artifactVerification": "local-sha256",
+    "npmPublished": true
+  },
+  "x-mojobox-source-metadata": {
+    "skinId": "deep-whale",
+    "displayName": "深海女仆工坊",
+    "author": "Small-tailqwq",
+    "description": "鲸鱼娘系列：深海女仆工坊、虎鲸链路及上游皮肤管理器。",
+    "tags": [
+      "whale",
+      "maid",
+      "orca",
+      "anime",
+      "glass",
+      "community"
+    ],
+    "references": {
+      "implementation": [
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/README.md",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/package.json",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/skin.json",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/src/client/index.ts",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/skin.json",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/src/client/index.ts",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/skin-manager/package.json",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/LICENSE-ARTWORK",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/NOTICE",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/LICENSE-ARTWORK",
+        "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/NOTICE"
+      ],
+      "previews": {
+        "light": "https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/preview/light.webp",
+        "dark": "https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/preview/dark.webp",
+        "overview": "https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/preview/light.png"
+      },
+      "license": {
+        "spdx": "MIT AND CC-BY-NC-SA-4.0",
+        "path": "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/LICENSE"
+      }
+    },
+    "installation": {
+      "type": "npm",
+      "pluginRefs": [
+        {
+          "ref": "@smalltailqwq/dsh-client-ui-skin-deep-whale-manager",
+          "version": "0.1.6"
+        },
+        {
+          "ref": "@smalltailqwq/dsh-client-ui-skin-maid-atelier",
+          "version": "0.1.7"
+        },
+        {
+          "ref": "@smalltailqwq/dsh-client-ui-skin-orca-link",
+          "version": "0.1.7"
+        }
+      ],
+      "status": "unverified",
+      "notes": [
+        "已确认三款 npm 包及对应版本存在，但未在目标宿主安装或进行运行时验证；registry 未提供 gitHead，不能宣称其产物等同于固定源码提交。",
+        "仓库根没有 package.json，裸 github:Small-tailqwq/dsh-deep-whale 不能作为一个插件安装；使用三个 npm 子包引用。",
+        "maid 与 orca 声明 DSH >=0.1.7-rc.1 <0.3.0-0，manager 声明 >=0.1.7-rc.1；元数据声明不等同于本项目验证。",
+        "manager 用于互斥切换及设置，两款皮肤不能同时激活；maid 本身没有 manager 硬依赖。",
+        "本仓 maid-atelier 与独立 deep-whale-day-night-theme 的原始 skin id 和 bodyAttr 相同，直接同装存在目录去重及样式冲突，不能承诺联合安装可用。",
+        "已安装 @linxin666/dsh-web-all 的环境应使用其皮肤中心适配版，不能叠装 standalone 版本。",
+        "代码为 MIT，美术为 CC BY-NC-SA 4.0；使用及衍生分发须保留完整 NOTICE 署名链并遵守非商业与相同方式共享要求。"
+      ]
+    },
+    "sourceMetadataDigest": "sha256:d5c5852efbe97ebb5b2b2102c1b3ec2c02ad540f7f086443e44ff6e8e93a0e03",
+    "packageSnapshotDigest": "sha256:57ecb1fc75e39b3b3167511b667b0183b0e4e1db849cf6c8e0e85ca1181b0029",
+    "loaderIntegration": "not-verified",
+    "runtimeVerification": "not-tested"
+  },
+  "x-mojobox-package": {
+    "peerDependencies": {
+      "@deepseek-ai/cordis": "^4.0.1",
+      "@deepseek-ai/dsh": ">=0.1.7-rc.1 <0.3.0-0"
+    },
+    "dsh": {
+      "bundle": {
+        "patch": "./cordis.patch.yml"
+      },
+      "client": {
+        "inject": [],
+        "platform": "web"
+      }
+    }
+  }
+}

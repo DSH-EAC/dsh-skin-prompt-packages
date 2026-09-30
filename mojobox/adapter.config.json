@@ -1,0 +1,86 @@
+{
+  "mojobox": {
+    "repository": "https://github.com/DSH-EAC/dsh-mojobox",
+    "revision": "13e72e1066d1d0cbf6a4d72c85d016257e7100b1",
+    "pluginSchemaRevision": "3df054302468d2091859db4b3bd079042d33f100"
+  },
+  "sourceMetadata": "../skin-prompts/community-metadata.json",
+  "loaderCatalogId": "dev.eac.ui-skin-loader",
+  "records": [
+    {
+      "id": "dev.smalltailqwq.whale-manager",
+      "skinId": "deep-whale",
+      "displayName": "鲸鱼娘皮肤管理器",
+      "packageSnapshot": "sources/whale-manager.package.json",
+      "license": "MIT",
+      "artifact": {
+        "path": "https://registry.npmjs.org/@smalltailqwq/dsh-client-ui-skin-deep-whale-manager/-/dsh-client-ui-skin-deep-whale-manager-0.1.6.tgz",
+        "digest": "sha256:73779624fbdad15c381baa37ba47c9bff69e00cc5825c9ea4371b547267850fe",
+        "algorithm": "sha256"
+      }
+    },
+    {
+      "id": "dev.smalltailqwq.maid-atelier",
+      "skinId": "deep-whale",
+      "displayName": "深海女仆工坊",
+      "packageSnapshot": "sources/maid-atelier.package.json",
+      "license": "MIT AND CC-BY-NC-SA-4.0",
+      "artifact": {
+        "path": "https://registry.npmjs.org/@smalltailqwq/dsh-client-ui-skin-maid-atelier/-/dsh-client-ui-skin-maid-atelier-0.1.7.tgz",
+        "digest": "sha256:87365c3bf8102ad10d01451064ab9af22a5a93e08c69e1751c6bee6a31fbb770",
+        "algorithm": "sha256"
+      }
+    },
+    {
+      "id": "dev.smalltailqwq.orca-link",
+      "skinId": "deep-whale",
+      "displayName": "虎鲸链路",
+      "packageSnapshot": "sources/orca-link.package.json",
+      "license": "MIT AND CC-BY-NC-SA-4.0",
+      "artifact": {
+        "path": "https://registry.npmjs.org/@smalltailqwq/dsh-client-ui-skin-orca-link/-/dsh-client-ui-skin-orca-link-0.1.7.tgz",
+        "digest": "sha256:30182c1d426bc5a2861674e1b38fe7902760d78acf6ca2e3e49d44c367e24e30",
+        "algorithm": "sha256"
+      }
+    },
+    {
+      "id": "dev.kingofsoysauce.liang-skin",
+      "skinId": "liang",
+      "displayName": "滑动变阻器皮肤",
+      "packageSnapshot": "sources/liang.package.json",
+      "license": "NOASSERTION",
+      "artifactVerification": "publisher-digest",
+      "artifact": {
+        "path": "https://github.com/kingOfSoySauce/dsh-liang-skin/releases/download/v0.1.7/dsh-client-liang-intensity-skin-0.1.7.tgz",
+        "digest": "sha256:c7cf46ccad31d0d1eb5024f8234ee8ca40df1c97af7d156a6ed2aceccdcc3eca",
+        "algorithm": "sha256"
+      }
+    },
+    {
+      "id": "dev.ggbond2424648901.deep-whale-day-night",
+      "skinId": "deep-whale-day-night",
+      "displayName": "鲸鱼娘昼夜工坊",
+      "packageSnapshot": "sources/deep-whale-day-night.package.json",
+      "license": "CC-BY-NC-SA-4.0",
+      "artifactVerification": "publisher-digest",
+      "artifact": {
+        "path": "https://github.com/GGBond2424648901/deep-whale-day-night-theme/releases/download/v0.1.12/deep-whale-day-night-theme-0.1.12.tgz",
+        "digest": "sha256:31363ec7901f1f2657d930107982227ae4e137a944c036d70b7df380a01ce922",
+        "algorithm": "sha256"
+      }
+    },
+    {
+      "id": "dev.ymh0000123.theme-endfield",
+      "skinId": "endfield",
+      "displayName": "终末地官网风格",
+      "packageSnapshot": "sources/endfield.package.json",
+      "license": "MIT"
+    }
+  ],
+  "sourceOnly": [
+    {
+      "skinId": "beauty-skins",
+      "reason": "上游没有根插件清单、Host 入口或可核验插件产物；保留完整来源元数据，不生成虚构的 Plugin Manifest。"
+    }
+  ]
+}

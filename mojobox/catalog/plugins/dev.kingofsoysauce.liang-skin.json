@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Yan-Zero/dsh-std/3df054302468d2091859db4b3bd079042d33f100/packages/manifest/schema/dsh-plugin-0.15.schema.json",
+  "manifestVersion": "0.15",
+  "id": "dev.kingofsoysauce.liang-skin",
+  "name": "dsh-client-liang-intensity-skin",
+  "version": "0.1.7",
+  "facets": {
+    "host": {
+      "entry": "src/index.js",
+      "apiVersion": "v1alpha1"
+    }
+  },
+  "license": "NOASSERTION",
+  "source": {
+    "repository": "https://github.com/kingOfSoySauce/dsh-liang-skin",
+    "revision": "976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3"
+  },
+  "artifact": {
+    "path": "https://github.com/kingOfSoySauce/dsh-liang-skin/releases/download/v0.1.7/dsh-client-liang-intensity-skin-0.1.7.tgz",
+    "digest": "sha256:c7cf46ccad31d0d1eb5024f8234ee8ca40df1c97af7d156a6ed2aceccdcc3eca",
+    "algorithm": "sha256"
+  },
+  "x-mojobox-maintenance": {
+    "source": "registry-maintained",
+    "reason": "Catalog projection maintained by DSH-EAC from upstream package metadata. Host entry is the Cordis package entry; v1alpha1 follows the Mojobox catalog convention and does not assert dsh-std negotiation. Fixed Git sources and published npm bytes are independently recorded; their equivalence is not asserted."
+  },
+  "x-mojobox-publication": {
+    "status": "published",
+    "reason": "GitHub Release asset and SHA-256 confirmed by the GitHub API. Full local download verification is pending; source package metadata is not projected as artifact metadata.",
+    "artifactVerification": "publisher-digest",
+    "npmPublished": false
+  },
+  "x-mojobox-source-metadata": {
+    "skinId": "liang",
+    "displayName": "滑动变阻器皮肤",
+    "author": "kingOfSoySauce",
+    "description": "滑动变阻器（上游名：滑动变祖）：推理档位滑块与人物背景皮肤。",
+    "tags": [
+      "reasoning",
+      "slider",
+      "portrait",
+      "adaptive",
+      "community"
+    ],
+    "references": {
+      "implementation": [
+        "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/README.md",
+        "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/package.json",
+        "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/cordis.patch.yml",
+        "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/src/client/index.tsx",
+        "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/src/client/logic.ts",
+        "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/src/client/skin.css"
+      ],
+      "previews": {
+        "overview": "https://raw.githubusercontent.com/kingOfSoySauce/dsh-liang-skin/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/docs/preview.png"
+      },
+      "license": {
+        "spdx": "NOASSERTION",
+        "path": null
+      }
+    },
+    "installation": {
+      "type": "github",
+      "pluginRefs": [
+        {
+          "ref": "github:kingOfSoySauce/dsh-liang-skin",
+          "version": "0.1.7"
+        }
+      ],
+      "status": "unverified",
+      "notes": [
+        "已核实根 package.json、bundle patch 和预构建客户端，包名为 dsh-client-liang-intensity-skin；未在目标宿主安装或进行运行时验证。",
+        "version 0.1.7 是固定源码清单版本，不代表薄包宿主能够用该字段锁定 Git commit；固定源码 SHA 单独记录在 sources。",
+        "上游 README 仅声明在 DSH 0.1.0-rc.6 验证，包内未声明内核版本范围；新版 DSH 兼容性未知。",
+        "该插件没有 skin.json，不能假设鲸鱼娘 manager 会发现或与其互斥；与其他外观插件联合安装前必须核查。",
+        "仓库未提供 LICENSE 或 NOTICE，许可为 NOASSERTION；不能据公开源码推定可复制、改编或再分发代码及人物素材，应先取得授权。",
+        "当前只有 overview 预览，不声明存在独立 light 或 dark 截图。"
+      ]
+    },
+    "sourceMetadataDigest": "sha256:d5c5852efbe97ebb5b2b2102c1b3ec2c02ad540f7f086443e44ff6e8e93a0e03",
+    "packageSnapshotDigest": "sha256:35e7b1fe5bf5ac8a7fc9a31a7bbab29cd6a7ed5e8bea60ebe65242e3938d85b6",
+    "loaderIntegration": "not-verified",
+    "runtimeVerification": "not-tested"
+  }
+}

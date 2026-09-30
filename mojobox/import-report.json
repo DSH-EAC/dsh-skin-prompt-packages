@@ -1,0 +1,135 @@
+{
+  "contract": "Mojobox Catalog / dsh-std 0.15",
+  "mojobox": {
+    "repository": "https://github.com/DSH-EAC/dsh-mojobox",
+    "revision": "13e72e1066d1d0cbf6a4d72c85d016257e7100b1",
+    "pluginSchemaRevision": "3df054302468d2091859db4b3bd079042d33f100"
+  },
+  "sourceMetadata": {
+    "path": "skin-prompts/community-metadata.json",
+    "digest": "sha256:d5c5852efbe97ebb5b2b2102c1b3ec2c02ad540f7f086443e44ff6e8e93a0e03",
+    "preserved": true
+  },
+  "records": [
+    {
+      "skinId": "deep-whale",
+      "id": "dev.smalltailqwq.whale-manager",
+      "version": "0.1.6",
+      "path": "catalog/plugins/dev.smalltailqwq.whale-manager.json",
+      "manifestDigest": "sha256:3d00c1808e8249d7a7bdbbc9fafd9d9d82df657a5f306214955c71d26619489d",
+      "publication": "published",
+      "packLockEligible": true,
+      "source": "npm:@smalltailqwq/dsh-client-ui-skin-deep-whale-manager@0.1.6",
+      "artifactDigest": "sha256:73779624fbdad15c381baa37ba47c9bff69e00cc5825c9ea4371b547267850fe",
+      "artifactVerification": "local-sha256"
+    },
+    {
+      "skinId": "deep-whale",
+      "id": "dev.smalltailqwq.maid-atelier",
+      "version": "0.1.7",
+      "path": "catalog/plugins/dev.smalltailqwq.maid-atelier.json",
+      "manifestDigest": "sha256:a351924a6595c4277f772c7f8713b4f32f730e1c1a7c6b745ac3c38c07f0a99a",
+      "publication": "published",
+      "packLockEligible": true,
+      "source": "npm:@smalltailqwq/dsh-client-ui-skin-maid-atelier@0.1.7",
+      "artifactDigest": "sha256:87365c3bf8102ad10d01451064ab9af22a5a93e08c69e1751c6bee6a31fbb770",
+      "artifactVerification": "local-sha256"
+    },
+    {
+      "skinId": "deep-whale",
+      "id": "dev.smalltailqwq.orca-link",
+      "version": "0.1.7",
+      "path": "catalog/plugins/dev.smalltailqwq.orca-link.json",
+      "manifestDigest": "sha256:a87cd08a2cc31715755748eadb0a2f75dbf0e0ff09c7e9f214a74f79272244ae",
+      "publication": "published",
+      "packLockEligible": true,
+      "source": "npm:@smalltailqwq/dsh-client-ui-skin-orca-link@0.1.7",
+      "artifactDigest": "sha256:30182c1d426bc5a2861674e1b38fe7902760d78acf6ca2e3e49d44c367e24e30",
+      "artifactVerification": "local-sha256"
+    },
+    {
+      "skinId": "liang",
+      "id": "dev.kingofsoysauce.liang-skin",
+      "version": "0.1.7",
+      "path": "catalog/plugins/dev.kingofsoysauce.liang-skin.json",
+      "manifestDigest": "sha256:de668f6cd60d40973bafabe81f04984a6dedc5e02c56a597ef33b8130814fe1b",
+      "publication": "published",
+      "packLockEligible": false,
+      "artifactDigest": "sha256:c7cf46ccad31d0d1eb5024f8234ee8ca40df1c97af7d156a6ed2aceccdcc3eca",
+      "artifactVerification": "publisher-digest"
+    },
+    {
+      "skinId": "deep-whale-day-night",
+      "id": "dev.ggbond2424648901.deep-whale-day-night",
+      "version": "0.1.12",
+      "path": "catalog/plugins/dev.ggbond2424648901.deep-whale-day-night.json",
+      "manifestDigest": "sha256:be0859245a4da5b1dc58fd440a86b42aa56cfe62e636f6c6229c3d462e6f30c3",
+      "publication": "published",
+      "packLockEligible": false,
+      "artifactDigest": "sha256:31363ec7901f1f2657d930107982227ae4e137a944c036d70b7df380a01ce922",
+      "artifactVerification": "publisher-digest"
+    },
+    {
+      "skinId": "endfield",
+      "id": "dev.ymh0000123.theme-endfield",
+      "version": "1.1.5",
+      "path": "catalog/plugins/dev.ymh0000123.theme-endfield.json",
+      "manifestDigest": "sha256:79037cedda086fc4322844daceb7316adf6cb91df2e62b75810c20f3da3c2bdf",
+      "publication": "unpublished",
+      "packLockEligible": false
+    }
+  ],
+  "sourceOnly": [
+    {
+      "skinId": "beauty-skins",
+      "path": "source-only/beauty-skins.json",
+      "reason": "上游没有根插件清单、Host 入口或可核验插件产物；保留完整来源元数据，不生成虚构的 Plugin Manifest。"
+    }
+  ],
+  "sharedCatalogReferences": [
+    {
+      "id": "dev.eac.ui-skin-loader",
+      "repository": "https://github.com/DSH-EAC/dsh-ui-skin-loader",
+      "integrationStatus": "not-verified",
+      "npmPublication": "not-available-at-check"
+    }
+  ],
+  "pack": {
+    "status": "blocked",
+    "reason": "The complete five-project loader pack requires published exact npm sources, verified artifact bytes and loader registration. GitHub refs and source-overlay projects cannot be locked as npm sources under the pinned Mojobox contract.",
+    "blockers": [
+      {
+        "skinId": "liang",
+        "id": "dev.kingofsoysauce.liang-skin",
+        "code": "exact-npm-source-not-published"
+      },
+      {
+        "skinId": "deep-whale-day-night",
+        "id": "dev.ggbond2424648901.deep-whale-day-night",
+        "code": "exact-npm-source-not-published"
+      },
+      {
+        "skinId": "endfield",
+        "id": "dev.ymh0000123.theme-endfield",
+        "code": "missing-published-artifact"
+      },
+      {
+        "skinId": "beauty-skins",
+        "code": "source-overlay-not-plugin"
+      },
+      {
+        "id": "dev.eac.ui-skin-loader",
+        "code": "loader-npm-version-not-published"
+      },
+      {
+        "code": "upstream-loader-integration-not-verified"
+      }
+    ]
+  },
+  "validation": {
+    "catalogSchema": "passed",
+    "officialPackageProjection": "passed",
+    "productionEvidence": "not-issued",
+    "mojoboxCatalogSubmission": "not-submitted"
+  }
+}
