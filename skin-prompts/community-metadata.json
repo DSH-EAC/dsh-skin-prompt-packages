@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "kind": "community-skin-metadata",
+  "updatedAt": "2026-09-30",
+  "delivery": "metadata-only",
+  "description": "用户指定五组社区皮肤的来源与安装元数据，供目录收录；不包含运行时代码或素材。",
+  "skinLoader": {
+    "repositoryUrl": "https://github.com/DSH-EAC/dsh-ui-skin-loader",
+    "package": "@dsh-eac/ui-skin-loader",
+    "version": "1.1.0",
+    "revision": "afa947215a862a9c3304f6fff7a812efe5a42fdc",
+    "integrationStatus": "not-verified",
+    "notes": "记录用户指定的注入器来源；本清单不声明上游皮肤已具备该注入器所需注册接口。"
+  },
+  "skins": [
+    {
+      "id": "deep-whale",
+      "name": "鲸鱼娘系列",
+      "nameEn": "Deep Whale Skin Series",
+      "author": "Small-tailqwq",
+      "description": "鲸鱼娘系列：深海女仆工坊、虎鲸链路及上游皮肤管理器。",
+      "tags": [
+        "whale",
+        "maid",
+        "orca",
+        "anime",
+        "glass",
+        "community"
+      ],
+      "sources": [
+        {
+          "project": "GitHub",
+          "repositoryUrl": "https://github.com/Small-tailqwq/dsh-deep-whale",
+          "revision": "42ecc2a587c4276e6b65a01933505a42d7f31584",
+          "repositoryPath": ".",
+          "tree": "d53a747a44ec71c91a98e5a6c0cc7a888f62c3ae"
+        }
+      ],
+      "references": {
+        "implementation": [
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/README.md",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/package.json",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/skin.json",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/src/client/index.ts",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/skin.json",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/src/client/index.ts",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/skin-manager/package.json",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/LICENSE-ARTWORK",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/NOTICE",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/LICENSE-ARTWORK",
+          "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/NOTICE"
+        ],
+        "previews": {
+          "light": "https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/preview/light.webp",
+          "dark": "https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/42ecc2a587c4276e6b65a01933505a42d7f31584/maid-atelier/preview/dark.webp",
+          "overview": "https://raw.githubusercontent.com/Small-tailqwq/dsh-deep-whale/42ecc2a587c4276e6b65a01933505a42d7f31584/orca-link/preview/light.png"
+        },
+        "license": {
+          "spdx": "MIT AND CC-BY-NC-SA-4.0",
+          "path": "https://github.com/Small-tailqwq/dsh-deep-whale/blob/42ecc2a587c4276e6b65a01933505a42d7f31584/LICENSE"
+        }
+      },
+      "installation": {
+        "type": "npm",
+        "pluginRefs": [
+          {
+            "ref": "@smalltailqwq/dsh-client-ui-skin-deep-whale-manager",
+            "version": "0.1.6"
+          },
+          {
+            "ref": "@smalltailqwq/dsh-client-ui-skin-maid-atelier",
+            "version": "0.1.7"
+          },
+          {
+            "ref": "@smalltailqwq/dsh-client-ui-skin-orca-link",
+            "version": "0.1.7"
+          }
+        ],
+        "status": "unverified",
+        "notes": [
+          "已确认三款 npm 包及对应版本存在，但未在目标宿主安装或进行运行时验证；registry 未提供 gitHead，不能宣称其产物等同于固定源码提交。",
+          "仓库根没有 package.json，裸 github:Small-tailqwq/dsh-deep-whale 不能作为一个插件安装；使用三个 npm 子包引用。",
+          "maid 与 orca 声明 DSH >=0.1.7-rc.1 <0.3.0-0，manager 声明 >=0.1.7-rc.1；元数据声明不等同于本项目验证。",
+          "manager 用于互斥切换及设置，两款皮肤不能同时激活；maid 本身没有 manager 硬依赖。",
+          "本仓 maid-atelier 与独立 deep-whale-day-night-theme 的原始 skin id 和 bodyAttr 相同，直接同装存在目录去重及样式冲突，不能承诺联合安装可用。",
+          "已安装 @linxin666/dsh-web-all 的环境应使用其皮肤中心适配版，不能叠装 standalone 版本。",
+          "代码为 MIT，美术为 CC BY-NC-SA 4.0；使用及衍生分发须保留完整 NOTICE 署名链并遵守非商业与相同方式共享要求。"
+        ]
+      }
+    },
+    {
+      "id": "liang",
+      "name": "滑动变阻器皮肤",
+      "nameEn": "Liang Intensity Skin",
+      "author": "kingOfSoySauce",
+      "description": "滑动变阻器（上游名：滑动变祖）：推理档位滑块与人物背景皮肤。",
+      "tags": [
+        "reasoning",
+        "slider",
+        "portrait",
+        "adaptive",
+        "community"
+      ],
+      "sources": [
+        {
+          "project": "GitHub",
+          "repositoryUrl": "https://github.com/kingOfSoySauce/dsh-liang-skin",
+          "revision": "976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3",
+          "repositoryPath": ".",
+          "tree": "6bd2af64d03980be109932e3d5b9483f5a46011b"
+        }
+      ],
+      "references": {
+        "implementation": [
+          "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/README.md",
+          "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/package.json",
+          "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/cordis.patch.yml",
+          "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/src/client/index.tsx",
+          "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/src/client/logic.ts",
+          "https://github.com/kingOfSoySauce/dsh-liang-skin/blob/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/src/client/skin.css"
+        ],
+        "previews": {
+          "overview": "https://raw.githubusercontent.com/kingOfSoySauce/dsh-liang-skin/976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/docs/preview.png"
+        },
+        "license": {
+          "spdx": "NOASSERTION",
+          "path": null
+        }
+      },
+      "installation": {
+        "type": "github",
+        "pluginRefs": [
+          {
+            "ref": "github:kingOfSoySauce/dsh-liang-skin",
+            "version": "0.1.7"
+          }
+        ],
+        "status": "unverified",
+        "notes": [
+          "已核实根 package.json、bundle patch 和预构建客户端，包名为 dsh-client-liang-intensity-skin；未在目标宿主安装或进行运行时验证。",
+          "version 0.1.7 是固定源码清单版本，不代表薄包宿主能够用该字段锁定 Git commit；固定源码 SHA 单独记录在 sources。",
+          "上游 README 仅声明在 DSH 0.1.0-rc.6 验证，包内未声明内核版本范围；新版 DSH 兼容性未知。",
+          "该插件没有 skin.json，不能假设鲸鱼娘 manager 会发现或与其互斥；与其他外观插件联合安装前必须核查。",
+          "仓库未提供 LICENSE 或 NOTICE，许可为 NOASSERTION；不能据公开源码推定可复制、改编或再分发代码及人物素材，应先取得授权。",
+          "当前只有 overview 预览，不声明存在独立 light 或 dark 截图。"
+        ]
+      }
+    },
+    {
+      "id": "deep-whale-day-night",
+      "name": "鲸鱼娘昼夜工坊",
+      "nameEn": "Deep Whale Day & Night",
+      "author": "Small-tailqwq · GGBond2424648901",
+      "description": "鲸鱼娘昼夜工坊：水晶白昼、月潮暗夜及场景角色。",
+      "tags": [
+        "whale",
+        "maid",
+        "day-night",
+        "glass",
+        "animated",
+        "community"
+      ],
+      "sources": [
+        {
+          "project": "GitHub",
+          "repositoryUrl": "https://github.com/GGBond2424648901/deep-whale-day-night-theme",
+          "revision": "3f6c4f14716d1e500f585be0c0d3c139c7a8a90b",
+          "repositoryPath": ".",
+          "tree": "b1207700df9a2b86d213eca8f0d3a8c1dfdba0a8"
+        }
+      ],
+      "references": {
+        "implementation": [
+          "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/README.md",
+          "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/package.json",
+          "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/skin.json",
+          "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/cordis.patch.yml",
+          "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/src/client/index.ts",
+          "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/NOTICE"
+        ],
+        "previews": {
+          "light": "https://raw.githubusercontent.com/GGBond2424648901/deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/preview/light.webp",
+          "dark": "https://raw.githubusercontent.com/GGBond2424648901/deep-whale-day-night-theme/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/preview/dark.webp"
+        },
+        "license": {
+          "spdx": "CC-BY-NC-SA-4.0",
+          "path": "https://github.com/GGBond2424648901/deep-whale-day-night-theme/blob/3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/LICENSE"
+        }
+      },
+      "installation": {
+        "type": "github",
+        "pluginRefs": [
+          {
+            "ref": "github:GGBond2424648901/deep-whale-day-night-theme",
+            "version": "0.1.12"
+          }
+        ],
+        "status": "unverified",
+        "notes": [
+          "已核实根 package.json、bundle patch、skin.json 和预构建客户端，包名为 @dsh-external/dsh-client-ui-skin-deep-whale-day-night；未在目标宿主安装或进行运行时验证。",
+          "version 0.1.12 是固定源码清单版本，不代表薄包宿主能够用该字段锁定 Git commit；固定源码 SHA 单独记录在 sources。",
+          "上游仅验证 DSH 0.1.0-rc.7，theme peer 为 >=0.1.0-rc.5 <0.2.0；新版 DSH 兼容性未知。",
+          "独立源的原始 skin id 为 maid-atelier，bodyAttr 为 data-dsh-maid-atelier，与 Small-tailqwq/dsh-deep-whale 的女仆工坊及既有 maid-atelier 可能冲突，不能同时激活。",
+          "原始包直接依赖 theme 服务，不需要鲸鱼娘 manager；若联合使用 manager，重复 skin id 会影响发现及互斥，必须先解决冲突。",
+          "这是独立昼夜主题来源，不等同于本仓既有 EAC/AIO maid-atelier；代码及美术均按上游 CC BY-NC-SA 4.0 使用，须保留完整 NOTICE 署名链。"
+        ]
+      }
+    },
+    {
+      "id": "endfield",
+      "name": "终末地官网风格",
+      "nameEn": "Endfield Official Site Style",
+      "author": "ymh0000123",
+      "description": "终末地官网风格：工业界面、黄/青配色、等高线与水印。",
+      "tags": [
+        "endfield",
+        "industrial",
+        "editorial",
+        "contour",
+        "yellow",
+        "cyan"
+      ],
+      "sources": [
+        {
+          "project": "GitHub",
+          "repositoryUrl": "https://github.com/ymh0000123/dsh-theme-endfield",
+          "revision": "a9f79fd197b7c2530a59ab0c4133169db5318784",
+          "repositoryPath": ".",
+          "tree": "96371bc030eb7c7c892498afa6d6fe6a95c46b28"
+        }
+      ],
+      "references": {
+        "implementation": [
+          "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/package.json",
+          "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/cordis.patch.yml",
+          "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/client.js",
+          "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/index.js",
+          "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/docs/design-language.md",
+          "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/README.md"
+        ],
+        "previews": {
+          "overview": "https://raw.githubusercontent.com/ymh0000123/dsh-theme-endfield/a9f79fd197b7c2530a59ab0c4133169db5318784/assets/screenshots1.webp"
+        },
+        "license": {
+          "spdx": "MIT",
+          "path": "https://github.com/ymh0000123/dsh-theme-endfield/blob/a9f79fd197b7c2530a59ab0c4133169db5318784/LICENSE"
+        }
+      },
+      "installation": {
+        "type": "github",
+        "pluginRefs": [
+          {
+            "ref": "github:ymh0000123/dsh-theme-endfield",
+            "version": "1.1.5"
+          }
+        ],
+        "status": "unverified",
+        "notes": [
+          "固定提交根目录具备 package.json、index.js、client.js 及 cordis.patch.yml；包名 dsh-theme-endfield，版本 1.1.5。",
+          "上游同时提供视觉主题、持久设置及音频通知；本记录仅描述上游插件，不声明已适配官方皮肤注入器。",
+          "GitHub 引用的 version 是期望版本，不保证安装器获取固定源码提交；固定 revision 单独用于来源追溯。",
+          "原创代码采用 MIT；Endfield 名称、标识、截图及相关素材权利归 Hypergryph，素材边界见上游 README。",
+          "尚未在当前目标宿主安装验证，不由元数据推定兼容。"
+        ]
+      }
+    },
+    {
+      "id": "beauty-skins",
+      "name": "美女系列皮肤",
+      "nameEn": "Beauty Wallpaper Skins",
+      "author": "XieRW; upstream skin engine: HeiGeAi (Blake Xu); upstream host: DeepSeek",
+      "description": "美女系列皮肤：壁纸目录、动态背景及本地图片取色；上游采用源码覆盖安装。",
+      "tags": [
+        "wallpaper",
+        "catalog",
+        "custom-image",
+        "video",
+        "palette",
+        "source-overlay"
+      ],
+      "sources": [
+        {
+          "project": "GitHub",
+          "repositoryUrl": "https://github.com/XieRW/dsh-beauty-skins",
+          "revision": "28e4e38e99c8f8636f3d220891816a0899a93084",
+          "repositoryPath": ".",
+          "tree": "e0367e96e35c7e96e59de514dd3a4041dcb8d626"
+        }
+      ],
+      "references": {
+        "implementation": [
+          "https://github.com/XieRW/dsh-beauty-skins/blob/28e4e38e99c8f8636f3d220891816a0899a93084/tree/packages/client/ui-theme/package.json",
+          "https://github.com/XieRW/dsh-beauty-skins/blob/28e4e38e99c8f8636f3d220891816a0899a93084/tree/packages/client/ui-theme/src/client/catalog-skin.ts",
+          "https://github.com/XieRW/dsh-beauty-skins/blob/28e4e38e99c8f8636f3d220891816a0899a93084/tree/packages/client/ui-theme/src/client/custom-skin.ts",
+          "https://github.com/XieRW/dsh-beauty-skins/blob/28e4e38e99c8f8636f3d220891816a0899a93084/tree/packages/client/ui-theme/src/client/AppearanceRow.tsx",
+          "https://github.com/XieRW/dsh-beauty-skins/blob/28e4e38e99c8f8636f3d220891816a0899a93084/tree/packages/client/ui-theme/src/styles/skins/_chrome.css",
+          "https://github.com/XieRW/dsh-beauty-skins/blob/28e4e38e99c8f8636f3d220891816a0899a93084/scripts/install.ps1",
+          "https://github.com/XieRW/dsh-beauty-skins/blob/28e4e38e99c8f8636f3d220891816a0899a93084/NOTICE.md",
+          "https://github.com/XieRW/dsh-beauty-skins/blob/28e4e38e99c8f8636f3d220891816a0899a93084/ASSET_PROVENANCE.md"
+        ],
+        "previews": {
+          "overview": "https://raw.githubusercontent.com/XieRW/dsh-beauty-skins/28e4e38e99c8f8636f3d220891816a0899a93084/docs/screenshot.png"
+        },
+        "license": {
+          "spdx": "MIT",
+          "path": "https://github.com/XieRW/dsh-beauty-skins/blob/28e4e38e99c8f8636f3d220891816a0899a93084/LICENSE"
+        }
+      },
+      "installation": {
+        "type": "source-overlay",
+        "pluginRefs": [
+          {
+            "ref": "github:XieRW/dsh-beauty-skins"
+          }
+        ],
+        "status": "blocked",
+        "notes": [
+          "根目录没有 package.json 或 cordis.patch.yml；github:XieRW/dsh-beauty-skins 是来源地址，当前不能作为符合目标宿主要求的根插件安装。",
+          "上游 scripts/install.ps1 要求 DSH 0.1.0-rc.7 源码，覆盖 packages/client/ui-theme 并应用 patches/host-integration.patch，然后重新安装依赖和构建。",
+          "嵌套包版本 0.1.0-rc.7 是宿主包版本，src/skin-version.ts 中的 2.1.0 是皮肤系统版本，均不能用作根插件发布版本。",
+          "软件采用 MIT，保留 HeiGeAi (Blake Xu) 及 DeepSeek 上游署名；外部壁纸权利归原站和作者。",
+          "ASSET_PROVENANCE.md 声明 v2.1.0 不再内置肖像或主题位图；目录媒体与用户选图不属于本清单的内置素材。",
+          "未提供运行时适配；官方皮肤注入器集成与当前宿主兼容性尚未验证。"
+        ]
+      }
+    }
+  ]
+}
