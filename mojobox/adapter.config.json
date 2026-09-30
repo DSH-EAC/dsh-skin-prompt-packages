@@ -47,9 +47,9 @@
       "id": "dev.kingofsoysauce.liang-skin",
       "skinId": "liang",
       "displayName": "滑动变阻器皮肤",
-      "packageSnapshot": "sources/liang.package.json",
+      "packageSnapshot": "sources/liang.release.package.json",
       "license": "NOASSERTION",
-      "artifactVerification": "publisher-digest",
+      "artifactVerification": "local-sha256",
       "artifact": {
         "path": "https://github.com/kingOfSoySauce/dsh-liang-skin/releases/download/v0.1.7/dsh-client-liang-intensity-skin-0.1.7.tgz",
         "digest": "sha256:c7cf46ccad31d0d1eb5024f8234ee8ca40df1c97af7d156a6ed2aceccdcc3eca",
@@ -60,9 +60,9 @@
       "id": "dev.ggbond2424648901.deep-whale-day-night",
       "skinId": "deep-whale-day-night",
       "displayName": "鲸鱼娘昼夜工坊",
-      "packageSnapshot": "sources/deep-whale-day-night.package.json",
+      "packageSnapshot": "sources/deep-whale-day-night.release.package.json",
       "license": "CC-BY-NC-SA-4.0",
-      "artifactVerification": "publisher-digest",
+      "artifactVerification": "local-sha256",
       "artifact": {
         "path": "https://github.com/GGBond2424648901/deep-whale-day-night-theme/releases/download/v0.1.12/deep-whale-day-night-theme-0.1.12.tgz",
         "digest": "sha256:31363ec7901f1f2657d930107982227ae4e137a944c036d70b7df380a01ce922",

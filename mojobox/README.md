@@ -9,8 +9,8 @@
 | 来源项目 | Mojobox 记录 | 发布状态 |
 | --- | --- | --- |
 | 鲸鱼娘系列 | 管理器、深海女仆工坊、虎鲸链路，三条 Plugin Manifest | 三个精确 npm 产物及 SHA-256 已核验 |
-| 滑动变阻器 | 一条 Plugin Manifest | GitHub Release 已发布，API 提供 SHA-256；完整本地下载核验待完成 |
-| 鲸鱼娘昼夜工坊 | 一条 Plugin Manifest | GitHub Release 已发布，API 提供 SHA-256；完整本地下载核验待完成 |
+| 滑动变阻器 | 一条 Plugin Manifest | GitHub Release 已发布，完整文件 SHA-256 已核验 |
+| 鲸鱼娘昼夜工坊 | 一条 Plugin Manifest | GitHub Release 已发布，完整文件 SHA-256 已核验 |
 | 终末地官网风格 | 一条 Plugin Manifest | `unpublished`，固定 GitHub 来源 |
 | 美女系列 | `source-only/beauty-skins.json` | 源码覆盖项目，无根插件，保留完整来源记录 |
 
@@ -65,7 +65,21 @@ node --test skin-prompt-pack.test.ts
 因此不会生成无法满足协议的 Pack/Lock 或把源码覆盖项目伪装成插件。
 原 MD 的 EAC Feature Pack v1 薄包与当前 Mojobox Pack v1alpha1 是不同格式。
 
-此目录尚未提交到 `dsh-mojobox` 收录，也没有发布新的 `.dshpack`。
+## 最新收录主线
+
+本生成器继续固定上述 revision，输出 legacy Plugin Catalog 元数据。
+Mojobox 后续 `fe6d0e986d486f9cf1cbff5bca8238034b63656a` 已切换为
+`catalog/feature-packs/ + artifacts/` 的薄 Feature Pack 收录。
+其默认网站不展示 legacy 插件目录，当前 MVP 暂缓公开外观包。
+这次上游贡献只提交目录记录及候选来源资料，不进入正式 Feature Pack 索引。
+最新 Feature Pack 的静态收录允许 GitHub 引用，不要求预先解析来源；
+上面的精确 npm 限制仅针对本生成器固定的 legacy PackLock，不套用到新收录格式。
+
+已向 `dsh-mojobox` 提交 [PR #6](https://github.com/DSH-EAC/dsh-mojobox/pull/6)，
+贡献六条 legacy 插件目录记录、五组来源候选资料及核验测试；尚未合并。
+上游基于 `fe6d0e986d486f9cf1cbff5bca8238034b63656a` 的完整检查为
+88 项测试通过，子路径构建通过，下载检查通过（正式收录为空）。
+此次没有发布新的 `.dshpack`。
 此工作区此前的 `pack.json`、`submission.template.json` 和根目录运行时适配
 属于本地实验，未纳入本次提交；当前构建只读取上述来源元数据和映射配置。
 

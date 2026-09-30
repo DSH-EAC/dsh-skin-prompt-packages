@@ -18,7 +18,7 @@ test('all five sources are preserved without a fictitious Beauty plugin', async 
   assert.equal(beauty.version, undefined);
 });
 
-test('only measured npm artifacts have package projections and lock eligibility', async () => {
+test('measured artifacts have package projections; only exact npm sources are lock eligible', async () => {
   const { files, report } = await buildCatalog();
   for (const record of report.records) {
     const bytes = files.get(record.path);
@@ -37,9 +37,9 @@ test('only measured npm artifacts have package projections and lock eligibility'
       assert.equal(manifest['x-mojobox-publication'].status, 'unpublished');
     } else {
       assert.ok(manifest.artifact);
-      assert.equal(manifest['x-mojobox-package'], undefined);
+      assert.ok(manifest['x-mojobox-package'].dsh);
       assert.equal(record.source, undefined);
-      assert.equal(record.artifactVerification, 'publisher-digest');
+      assert.equal(record.artifactVerification, 'local-sha256');
     }
   }
   assert.equal(report.records.filter((item) => item.packLockEligible).length, 3);

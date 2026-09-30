@@ -16,7 +16,7 @@
       "id": "dev.smalltailqwq.whale-manager",
       "version": "0.1.6",
       "path": "catalog/plugins/dev.smalltailqwq.whale-manager.json",
-      "manifestDigest": "sha256:3d00c1808e8249d7a7bdbbc9fafd9d9d82df657a5f306214955c71d26619489d",
+      "manifestDigest": "sha256:39a4e2f6e3a7b41a1c3e8af2fddbe08a2616cf1de42e49c28d806d63e4c4fad8",
       "publication": "published",
       "packLockEligible": true,
       "source": "npm:@smalltailqwq/dsh-client-ui-skin-deep-whale-manager@0.1.6",
@@ -28,7 +28,7 @@
       "id": "dev.smalltailqwq.maid-atelier",
       "version": "0.1.7",
       "path": "catalog/plugins/dev.smalltailqwq.maid-atelier.json",
-      "manifestDigest": "sha256:a351924a6595c4277f772c7f8713b4f32f730e1c1a7c6b745ac3c38c07f0a99a",
+      "manifestDigest": "sha256:35ed4cfa4852805b13637a034643af5c4d9569064dd2f5adc4de864d1639fecd",
       "publication": "published",
       "packLockEligible": true,
       "source": "npm:@smalltailqwq/dsh-client-ui-skin-maid-atelier@0.1.7",
@@ -40,7 +40,7 @@
       "id": "dev.smalltailqwq.orca-link",
       "version": "0.1.7",
       "path": "catalog/plugins/dev.smalltailqwq.orca-link.json",
-      "manifestDigest": "sha256:a87cd08a2cc31715755748eadb0a2f75dbf0e0ff09c7e9f214a74f79272244ae",
+      "manifestDigest": "sha256:56dcd266c799e003075838844b51c6ae5446b1755cd32ce2ec3f3bd90738a437",
       "publication": "published",
       "packLockEligible": true,
       "source": "npm:@smalltailqwq/dsh-client-ui-skin-orca-link@0.1.7",
@@ -52,22 +52,22 @@
       "id": "dev.kingofsoysauce.liang-skin",
       "version": "0.1.7",
       "path": "catalog/plugins/dev.kingofsoysauce.liang-skin.json",
-      "manifestDigest": "sha256:de668f6cd60d40973bafabe81f04984a6dedc5e02c56a597ef33b8130814fe1b",
+      "manifestDigest": "sha256:ffc9c12bbea91fc9ccd20173baf5504f769fefaa0529b5fa0b0751ca342c8f35",
       "publication": "published",
       "packLockEligible": false,
       "artifactDigest": "sha256:c7cf46ccad31d0d1eb5024f8234ee8ca40df1c97af7d156a6ed2aceccdcc3eca",
-      "artifactVerification": "publisher-digest"
+      "artifactVerification": "local-sha256"
     },
     {
       "skinId": "deep-whale-day-night",
       "id": "dev.ggbond2424648901.deep-whale-day-night",
       "version": "0.1.12",
       "path": "catalog/plugins/dev.ggbond2424648901.deep-whale-day-night.json",
-      "manifestDigest": "sha256:be0859245a4da5b1dc58fd440a86b42aa56cfe62e636f6c6229c3d462e6f30c3",
+      "manifestDigest": "sha256:82f6170bdb1aca32bc0a6a4ff18e90f5553c8d257c9b6300cecbb155742ef4ff",
       "publication": "published",
       "packLockEligible": false,
       "artifactDigest": "sha256:31363ec7901f1f2657d930107982227ae4e137a944c036d70b7df380a01ce922",
-      "artifactVerification": "publisher-digest"
+      "artifactVerification": "local-sha256"
     },
     {
       "skinId": "endfield",

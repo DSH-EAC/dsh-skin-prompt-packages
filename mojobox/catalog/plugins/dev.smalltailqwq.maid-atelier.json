@@ -26,7 +26,7 @@
   },
   "x-mojobox-publication": {
     "status": "published",
-    "reason": "Exact npm tarball downloaded with lifecycle scripts disabled; SHA-256 measured from its bytes.",
+    "reason": "Exact npm tarball downloaded without executing plugins or lifecycle scripts; SHA-256 measured from its bytes.",
     "artifactVerification": "local-sha256",
     "npmPublished": true
   },

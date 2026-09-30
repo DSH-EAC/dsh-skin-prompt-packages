@@ -26,8 +26,8 @@
   },
   "x-mojobox-publication": {
     "status": "published",
-    "reason": "GitHub Release asset and SHA-256 confirmed by the GitHub API. Full local download verification is pending; source package metadata is not projected as artifact metadata.",
-    "artifactVerification": "publisher-digest",
+    "reason": "Exact GitHub Release tarball downloaded without executing plugins or lifecycle scripts; SHA-256 measured from its bytes.",
+    "artifactVerification": "local-sha256",
     "npmPublished": false
   },
   "x-mojobox-source-metadata": {
@@ -80,8 +80,25 @@
       ]
     },
     "sourceMetadataDigest": "sha256:d5c5852efbe97ebb5b2b2102c1b3ec2c02ad540f7f086443e44ff6e8e93a0e03",
-    "packageSnapshotDigest": "sha256:49aa419a9318329042b0310da3cfb37ae712af07de0196121e687f54161a3744",
+    "packageSnapshotDigest": "sha256:80663b3704a185215494da30584a0af217be6336d263362c5774c8fb84504d1e",
     "loaderIntegration": "not-verified",
     "runtimeVerification": "not-tested"
+  },
+  "x-mojobox-package": {
+    "peerDependencies": {
+      "@deepseek-ai/cordis": "^4.0.1",
+      "@deepseek-ai/dsh-client-ui-theme": ">=0.1.0-rc.5 <0.2.0"
+    },
+    "dsh": {
+      "bundle": {
+        "patch": "./cordis.patch.yml"
+      },
+      "client": {
+        "inject": [
+          "@deepseek-ai/dsh-client-ui-theme"
+        ],
+        "platform": "web"
+      }
+    }
   }
 }

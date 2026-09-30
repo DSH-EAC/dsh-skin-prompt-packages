@@ -65,7 +65,7 @@ export async function buildCatalog({ write = false, configuration } = {}) {
       },
       'x-mojobox-publication': {
         status: published ? 'published' : 'unpublished',
-        reason: !published ? 'Fixed GitHub package source is available; no verified artifact for this exact package/version was found.' : locallyVerified ? 'Exact npm tarball downloaded with lifecycle scripts disabled; SHA-256 measured from its bytes.' : 'GitHub Release asset and SHA-256 confirmed by the GitHub API. Full local download verification is pending; source package metadata is not projected as artifact metadata.',
+        reason: !published ? 'Fixed GitHub package source is available; no verified artifact for this exact package/version was found.' : locallyVerified ? `Exact ${npmPublished ? 'npm' : 'GitHub Release'} tarball downloaded without executing plugins or lifecycle scripts; SHA-256 measured from its bytes.` : 'GitHub Release asset and SHA-256 confirmed by the GitHub API. Full local download verification is pending; source package metadata is not projected as artifact metadata.',
         artifactVerification: !published ? 'not-available' : locallyVerified ? 'local-sha256' : 'publisher-digest',
         npmPublished,
       },

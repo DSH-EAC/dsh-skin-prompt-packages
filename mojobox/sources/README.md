@@ -10,6 +10,8 @@ JSON line endings are normalized to LF; the adapter hashes the snapshot bytes.
 | `orca-link.package.json` | `package/package.json` in npm `@smalltailqwq/dsh-client-ui-skin-orca-link@0.1.7` |
 | `liang.package.json` | `kingOfSoySauce/dsh-liang-skin@976fcbf9b4a91b79f14b90c16cbe0d3f553c2bd3/package.json` |
 | `deep-whale-day-night.package.json` | `GGBond2424648901/deep-whale-day-night-theme@3f6c4f14716d1e500f585be0c0d3c139c7a8a90b/package.json` |
+| `liang.release.package.json` | `package/package.json` in GitHub Release asset 523160379, v0.1.7 |
+| `deep-whale-day-night.release.package.json` | `package/package.json` in GitHub Release asset 520503316, v0.1.12 |
 | `endfield.package.json` | `ymh0000123/dsh-theme-endfield@a9f79fd197b7c2530a59ab0c4133169db5318784/package.json` |
 
 The three npm tarballs were downloaded with `npm pack --ignore-scripts` on
@@ -26,8 +28,10 @@ License scope follows each upstream project. These metadata snapshots and
 the adapter's MIT license do not grant rights to third-party artwork.
 
 Liang v0.1.7 and Day/Night v0.1.12 also have GitHub Release assets. Their
-SHA-256 values were obtained from GitHub's release asset API (asset IDs
-523160379 and 520503316 respectively). Slow downloads prevented full local
-byte verification in this run. Catalog records mark `publisher-digest`, do
-not project the source snapshots as artifact package metadata, and do not
-claim PackLock eligibility or runtime Evidence for these assets.
+SHA-256 values were first obtained from GitHub's release asset API (asset
+IDs 523160379 and 520503316 respectively), then verified by downloading
+the complete original compressed bytes on 2026-09-30. Catalog records now
+mark `local-sha256` and project fields from the corresponding release
+package snapshots. The fixed Git source snapshots remain preserved.
+Neither release asset is an exact npm source for the pinned legacy
+PackLock contract. No plugin execution or runtime Evidence is claimed.
